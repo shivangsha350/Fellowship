@@ -1,17 +1,22 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Home from "./pages/Home";   // your Home page
+import About from "./pages/About";
+import FAQ from "./pages/FAQ";
 import HeroSection from "./HeroSection";
 
 function App() {
   return (
-    
-    <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
-      {/* Navbar */}
+    <BrowserRouter>
       <Navbar />
-       
-       <HeroSection />
-     
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/faq" element={<FAQ />} />
+      </Routes>
+      
+    </BrowserRouter>
   );
 }
 

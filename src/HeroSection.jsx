@@ -1,12 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const HeroSection = () => {
+  const [animate, setAnimate] = useState(false);
+
+  // Trigger animation on mount
+  useEffect(() => {
+    setAnimate(true);
+  }, []);
+
   return (
     <section className="min-h-screen flex items-center bg-gradient-to-r from-orange-100 via-white to-orange-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 px-4 sm:px-6 md:px-12 lg:px-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center w-full max-w-7xl mx-auto">
-        
+
         {/* Left Side - Text */}
-        <div className="text-center md:text-left">
+        <div
+          className={`text-center md:text-left transition-all duration-1000 ${
+            animate ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
           <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold text-gray-900 dark:text-white leading-snug sm:leading-tight">
             Welcome to <span className="text-orange-500">Adore Fellowship</span>
           </h1>
@@ -23,13 +34,18 @@ const HeroSection = () => {
         </div>
 
         {/* Right Side - Image */}
-        <div className="flex justify-center md:justify-end mt-8 md:mt-0">
+        <div
+          className={`flex justify-center md:justify-end mt-8 md:mt-0 transition-all duration-1000 ${
+            animate ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
           <img
             src="https://fellowship.bhumi.ngo/assets/images/video_new_2.jpg"
             alt="Adore Fellowship"
             className="w-72 sm:w-80 md:w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl drop-shadow-xl rounded-xl"
           />
         </div>
+
       </div>
     </section>
   );
