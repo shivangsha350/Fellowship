@@ -9,7 +9,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="min-h-screen flex items-center bg-gradient-to-r from-orange-100 via-white to-orange-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 px-4 sm:px-6 md:px-12 lg:px-20">
+    <section className="min-h-screen flex items-center bg-gradient-to-r from-orange-200 via-white to-orange-50 px-4 sm:px-6 md:px-12 lg:px-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center w-full max-w-7xl mx-auto">
 
         {/* Left Side - Text */}
@@ -18,10 +18,10 @@ const HeroSection = () => {
             animate ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold text-gray-900 dark:text-white leading-snug sm:leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold text-gray-900 leading-snug sm:leading-tight">
             Welcome to <span className="text-orange-500">Adore Fellowship</span>
           </h1>
-          <p className="mt-4 sm:mt-6 text-base sm:text-lg lg:text-xl text-gray-600 dark:text-gray-300 px-2 sm:px-0">
+          <p className="mt-4 sm:mt-6 text-base sm:text-lg lg:text-xl text-gray-600 px-2 sm:px-0">
             Where creativity meets innovation, and collaboration drives the future of endless possibilities.
           </p>
 
