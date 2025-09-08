@@ -92,7 +92,7 @@ const Navbar = () => {
           links={[
             { href: "/fellow/eligibility", label: "Eligibility & Offerings" },
             { href: "/fellow/selection", label: "Selection Process" },
-            { href: "/WhyFellowship.jsx", label: "Why Bhumi Fellowship" },
+            { href: "/WhyFellowship.jsx", label: "Why ADORE Fellowship" },
             { href: "/fellow/list", label: "Meet our Fellows" },
           ]}
         />
