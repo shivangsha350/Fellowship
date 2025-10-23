@@ -2,11 +2,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaEye, FaBullseye } from "react-icons/fa";
-import aboutImage from "./assets/Thumbnail_Adore.jpg";
 
 const AboutFellowship = () => {
   return (
-    <section className="py-16 px-6 md:px-16 bg-gradient-to-r from-orange-0 via-orange-100 to-orange-200">
+    <section className="py-16 px-6 md:px-16 bg-gradient-to-r from-blue-50 via-white to-blue-400">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-7xl mx-auto">
 
         {/* Left - Image with Animation */}
@@ -18,10 +17,10 @@ const AboutFellowship = () => {
           className="relative"
         >
           {/* Decorative Orange Border */}
-          <div className="absolute -top-4 -left-4 w-full h-full border-4 border-orange-400 rounded-xl"></div>
+          <div className="absolute -top-4 -left-4 w-full h-full border-4 border-blue-400 rounded-xl"></div>
 
           <img
-            src="https://images.unsplash.com/photo-1589104759909-e355f8999f7e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGZlbGxvd3NoaXAlMjBwcm9ncmFtfGVufDB8fDB8fHww"
+            src="/Thumbnail_Adore.jpg"
             alt="Adore Fellowship"
             className="rounded-xl shadow-xl relative z-10 transform hover:scale-105 transition-transform duration-700"
           />

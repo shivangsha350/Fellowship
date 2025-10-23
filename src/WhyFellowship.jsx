@@ -2,7 +2,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaPlay } from "react-icons/fa";
-import Thumbnail from "./assets/Thumbnail_Adore.jpg";
 
 const WhyFellowship = () => {
   return (
@@ -43,12 +42,12 @@ const WhyFellowship = () => {
           viewport={{ once: true }}
         >
           {/* Orange Corner Border Effect */}
-          <div className="absolute -top-4 -right-4 w-full h-full border-4 border-orange-400 rounded-xl"></div>
+          <div className="absolute -top-4 -right-4 w-full h-full border-4 border-blue-400 rounded-xl"></div>
 
           {/* Video Thumbnail */}
           <div className="relative rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-500">
             <img
-              src="https://plus.unsplash.com/premium_photo-1681505195930-388c317b7a76?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGZlbGxvd3NoaXB8ZW58MHx8MHx8fDA%3D"
+              src="/Thumbnail_Adore.jpg"
               alt="Adore Fellowship Video"
               className="w-full h-full object-cover rounded-xl transform hover:scale-105 transition-transform duration-700"
             />

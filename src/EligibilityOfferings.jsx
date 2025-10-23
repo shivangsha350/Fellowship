@@ -31,7 +31,7 @@ const offerings = [
 
 const EligibilityOfferings = () => {
   return (
-    <section className="py-12 px-6 md:px-16 bg-white">
+    <section className="py-12 px-6 md:px-16 bg-gradient-to-r from-blue-400 via-white to-blue-50">
       <h2 className="text-3xl font-bold text-center mb-12">
         Eligibility & Offerings
       </h2>
@@ -42,7 +42,7 @@ const EligibilityOfferings = () => {
             key={index}
             className="flex flex-col items-center text-center"
           >
-            <div className="w-24 h-24 flex items-center justify-center rounded-full bg-green-500 text-white mb-4">
+            <div className="w-24 h-24 flex items-center justify-center rounded-full bg-gray-300 text-blue-950 mb-4">
               {item.icon}
             </div>
             <p className="text-lg">{item.text}</p>

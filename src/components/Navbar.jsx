@@ -29,7 +29,7 @@ const Navbar = () => {
       <div className="relative">
         <button
           onClick={toggleDropdown}
-          className="flex items-center transition-colors duration-200 hover:text-orange-500"
+          className="flex items-center transition-colors duration-200 hover:text-blue-500"
         >
           {label} <ChevronDown size={16} className="ml-1" />
         </button>
@@ -70,7 +70,7 @@ const Navbar = () => {
 
       {/* Desktop Links */}
       <div className="hidden md:flex items-center space-x-6 font-semibold text-gray-800">
-        <a href="/" className={pathname === "/" ? "text-orange-500" : ""}>
+        <a href="/" className={pathname === "/" ? "text-blue-500" : ""}>
           Home
         </a>
 
@@ -108,14 +108,14 @@ const Navbar = () => {
           ]}
         />
 
-        <a href="/refer" className={pathname === "/refer" ? "text-orange-500" : ""}>
+        <a href="/refer" className={pathname === "/refer" ? "text-blue-500" : ""}>
           Refer
         </a>
       </div>
 
       {/* Right side */}
       <div className="flex items-center space-x-2 sm:space-x-4">
-        <button className="hidden md:block bg-orange-500 hover:bg-orange-600 text-white px-4 sm:px-5 py-2 rounded-full shadow-md text-sm sm:text-base">
+        <button className="hidden md:block bg-blue-400 hover:bg-blue-600 text-white px-4 sm:px-5 py-2 rounded-full shadow-md text-sm sm:text-base">
           Apply Now
         </button>
 
@@ -132,7 +132,7 @@ const Navbar = () => {
       {menuOpen && (
         <div className="absolute top-full left-0 w-full bg-white shadow-md md:hidden z-50">
           <div className="flex flex-col space-y-1 p-4 font-semibold text-gray-800">
-            <a href="/" className={pathname === "/" ? "text-orange-500" : ""}>
+            <a href="/" className={pathname === "/" ? "text-blue-500" : ""}>
               Home
             </a>
 
@@ -180,7 +180,7 @@ const Navbar = () => {
                         <a
                           key={link.href}
                           href={link.href}
-                          className="py-1 hover:text-orange-500"
+                          className="py-1 hover:text-blue-500"
                         >
                           {link.label}
                         </a>
@@ -191,7 +191,7 @@ const Navbar = () => {
               );
             })}
 
-            <a href="/refer" className={pathname === "/refer" ? "text-orange-500" : ""}>
+            <a href="/refer" className={pathname === "/refer" ? "text-blue-500" : ""}>
               Refer
             </a>
           </div>
