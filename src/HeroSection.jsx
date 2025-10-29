@@ -24,7 +24,7 @@ const HeroSection = () => {
               <span className="text-black-800">ADORE Fellowship</span>
             </h1>
 
-            <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-gray-700 px-2 sm:px-0">
+            <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-sm text-gray-700 px-2 sm:px-0">
               Where creativity meets innovation, and collaboration drives the future
               <br className="hidden sm:block" />
               of endless possibilities.
