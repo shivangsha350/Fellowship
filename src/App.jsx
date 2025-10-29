@@ -10,6 +10,10 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
+      <div className="pt-16">
+  {/* Your page content here */}
+</div>
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

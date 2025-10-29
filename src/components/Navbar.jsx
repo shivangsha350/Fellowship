@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const { pathname } = useLocation();
-  const [openDropdown, setOpenDropdown] = useState(null); // 'about', 'fellow', 'faq' or null
+  const [openDropdown, setOpenDropdown] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const navRef = useRef(null);
 
@@ -20,6 +20,7 @@ const Navbar = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  // Dropdown Component for Desktop
   const Dropdown = ({ keyName, width, links, label }) => {
     const toggleDropdown = () => {
       setOpenDropdown(openDropdown === keyName ? null : keyName);
@@ -36,8 +37,7 @@ const Navbar = () => {
 
         {openDropdown === keyName && (
           <div
-            className={`absolute top-10 left-0 bg-white shadow-lg rounded-md py-2 ${width} 
-            transform transition-all duration-300 ease-out opacity-0 scale-95 animate-dropdown`}
+            className={`absolute top-10 left-0 bg-white shadow-lg rounded-md py-2 ${width} animate-dropdown`}
           >
             {links.map((link) => (
               <a
@@ -57,14 +57,14 @@ const Navbar = () => {
   return (
     <nav
       ref={navRef}
-      className="w-full shadow bg-orange-30 px-4 sm:px-6 py-3 flex items-center justify-between transition-colors relative"
+      className="fixed top-0 left-0 w-full z-50 bg-white shadow px-4 sm:px-6 py-3 flex items-center justify-between transition-colors"
     >
       {/* Logo */}
       <div className="flex items-center">
         <img
           src="https://tse3.mm.bing.net/th/id/OIP.naiZpijxE5jAhs6tBd30cAHaCd?pid=Api&P=0&h=220"
           alt="Adore Fellowship Logo"
-          className="h-8 sm:h-10 w-auto"
+          className="h-8 sm:h-10 w-auto object-contain"
         />
       </div>
 
@@ -79,44 +79,16 @@ const Navbar = () => {
           label="About Us"
           width="w-52"
           links={[
-            { href: "/about/story", label: "Our Story" },
-            { href: "/about/team", label: "Team" },
-            { href: "/about/impact", label: "Impact" },
+            { href: "/about/story", label: "About ADORE" },
+            { href: "/about/team", label: "Our Program" },
           ]}
         />
-
-        <Dropdown
-          keyName="fellow"
-          label="Become a Fellow"
-          width="w-60"
-          links={[
-            { href: "/fellow/eligibility", label: "Eligibility & Offerings" },
-            { href: "/fellow/selection", label: "Selection Process" },
-            { href: "/WhyFellowship.jsx", label: "Why ADORE Fellowship" },
-            { href: "/fellow/list", label: "Meet our Fellows" },
-          ]}
-        />
-
-        <Dropdown
-          keyName="faq"
-          label="FAQ"
-          width="w-44"
-          links={[
-            { href: "/faq/general", label: "General" },
-            { href: "/faq/application", label: "Application" },
-            { href: "/faq/life", label: "Fellowship Life" },
-          ]}
-        />
-
-        <a href="/refer" className={pathname === "/refer" ? "text-blue-500" : ""}>
-          Refer
-        </a>
       </div>
 
       {/* Right side */}
       <div className="flex items-center space-x-2 sm:space-x-4">
         <button className="hidden md:block bg-blue-400 hover:bg-blue-600 text-white px-4 sm:px-5 py-2 rounded-full shadow-md text-sm sm:text-base">
-          Apply Now
+          Become a Fellow
         </button>
 
         {/* Mobile Menu Button */}
@@ -136,70 +108,40 @@ const Navbar = () => {
               Home
             </a>
 
-            {/* Mobile Dropdowns */}
-            {["about", "fellow", "faq"].map((key) => {
-              let links = [];
-              let label = "";
-              if (key === "about") {
-                label = "About Us";
-                links = [
-                  { href: "/about/story", label: "Our Story" },
-                  { href: "/about/team", label: "Team" },
-                  { href: "/about/impact", label: "Impact" },
-                ];
-              } else if (key === "fellow") {
-                label = "Become a Fellow";
-                links = [
-                  { href: "/fellow/eligibility", label: "Eligibility & Offerings" },
-                  { href: "/fellow/selection", label: "Selection Process" },
-                  { href: "/fellow/why", label: "Why Bhumi Fellowship" },
-                  { href: "/fellow/list", label: "Meet our Fellows" },
-                ];
-              } else if (key === "faq") {
-                label = "FAQ";
-                links = [
-                  { href: "/faq/general", label: "General" },
-                  { href: "/faq/application", label: "Application" },
-                  { href: "/faq/life", label: "Fellowship Life" },
-                ];
-              }
-
-              return (
-                <div key={key}>
-                  <button
-                    onClick={() =>
-                      setOpenDropdown(openDropdown === key ? null : key)
-                    }
-                    className="flex items-center w-full justify-between py-2"
+            {/* Mobile Dropdown */}
+            <div>
+              <button
+                onClick={() =>
+                  setOpenDropdown(openDropdown === "about" ? null : "about")
+                }
+                className="flex items-center justify-between py-2 w-full"
+              >
+                About Us <ChevronDown size={16} />
+              </button>
+              {openDropdown === "about" && (
+                <div className="pl-4 flex flex-col space-y-1">
+                  <a
+                    href="/about/story"
+                    className="py-1 hover:text-blue-500 transition-colors"
                   >
-                    {label} <ChevronDown size={16} />
-                  </button>
-                  {openDropdown === key && (
-                    <div className="pl-4 flex flex-col space-y-1">
-                      {links.map((link) => (
-                        <a
-                          key={link.href}
-                          href={link.href}
-                          className="py-1 hover:text-blue-500"
-                        >
-                          {link.label}
-                        </a>
-                      ))}
-                    </div>
-                  )}
+                    About ADORE
+                  </a>
+                  <a
+                    href="/about/team"
+                    className="py-1 hover:text-blue-500 transition-colors"
+                  >
+                    Our Program
+                  </a>
                 </div>
-              );
-            })}
+              )}
+            </div>
 
-            <a href="/refer" className={pathname === "/refer" ? "text-blue-500" : ""}>
-              Refer
-            </a>
+            <button className="bg-blue-400 hover:bg-blue-600 text-white px-4 py-2 rounded-full shadow-md mt-2">
+              Become a Fellow
+            </button>
           </div>
         </div>
       )}
-
-
-      
     </nav>
   );
 };

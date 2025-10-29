@@ -5,7 +5,7 @@ import { FaEye, FaBullseye } from "react-icons/fa";
 
 const AboutFellowship = () => {
   return (
-    <section className="py-16 px-6 md:px-16 bg-gradient-to-r from-blue-50 via-white to-blue-400">
+    <section className="py-10 px-6 md:px-16 bg-gradient-to-r from-blue-50 via-white to-blue-400">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-7xl mx-auto">
 
         {/* Left - Image with Animation */}
@@ -16,13 +16,13 @@ const AboutFellowship = () => {
           viewport={{ once: true }}
           className="relative"
         >
-          {/* Decorative Orange Border */}
-          <div className="absolute -top-4 -left-4 w-full h-full border-4 border-blue-400 rounded-xl"></div>
+          {/* Decorative Blue Border */}
+          <div className="absolute -top-5 -left-6 w-[85%] h-[100%] border-4 border-blue-400 rounded-xl"></div>
 
           <img
             src="/Thumbnail_Adore.jpg"
             alt="Adore Fellowship"
-            className="rounded-xl shadow-xl relative z-10 transform hover:scale-105 transition-transform duration-700"
+            className="w-100 h-100 rounded-xl shadow-xl relative z-10 transform hover:scale-105 transition-transform duration-700"
           />
         </motion.div>
 

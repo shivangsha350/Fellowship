@@ -31,7 +31,7 @@ const offerings = [
 
 const EligibilityOfferings = () => {
   return (
-    <section className="py-12 px-6 md:px-16 bg-gradient-to-r from-blue-400 via-white to-blue-50">
+    <section className="py-4 px-6 md:px-16 bg-gradient-to-r from-blue-400 via-white to-blue-50">
       <h2 className="text-3xl font-bold text-center mb-12">
         Eligibility & Offerings
       </h2>
