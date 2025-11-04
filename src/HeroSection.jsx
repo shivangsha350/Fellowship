@@ -65,12 +65,12 @@ const HeroSection = () => {
       <div className="bg-gray-100 py-3 overflow-hidden mt-6">
         <div className="whitespace-nowrap animate-bounce-strip flex items-center gap-10 sm:gap-16 text-gray-800 text-sm sm:text-base font-semibold px-4">
           <span className="text-blue-700 font-bold">ADORE Fellowship Benefits</span>
-          <span>1. Mentorship by Core Team</span>
-          <span>2. Certificate of Completion</span>
-          <span>3. Letter of Recommendation</span>
-          <span>4. Networking & Recognition</span>
-          <span>5. Leadership Experience</span>
-          <span>6. Stipend</span>
+          <span> 1. Mentorship by Core Team</span>
+          <span> 2. Certificate of Completion</span>
+          <span> 3. Letter of Recommendation</span>
+          <span> 4. Networking & Recognition</span>
+          <span> 5. Leadership Experience</span>
+          <span> 6. Stipend</span>
         </div>
       </div>
 

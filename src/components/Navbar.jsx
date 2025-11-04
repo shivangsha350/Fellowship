@@ -83,17 +83,22 @@ const Navbar = () => {
             { href: "/about/team", label: "Our Program" },
           ]}
         />
+
+        {/* ✅ Desktop “Become a Fellow” button as link */}
+        <a
+          href="https://bit.ly/ADORE-FELLOWSHIP"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-blue-400 hover:bg-blue-600 text-white px-4 sm:px-5 py-2 rounded-full shadow-md text-sm sm:text-base"
+        >
+          Become a Fellow
+        </a>
       </div>
 
-      {/* Right side */}
-      <div className="flex items-center space-x-2 sm:space-x-4">
-        <button className="hidden md:block bg-blue-400 hover:bg-blue-600 text-white px-4 sm:px-5 py-2 rounded-full shadow-md text-sm sm:text-base">
-          Become a Fellow
-        </button>
-
-        {/* Mobile Menu Button */}
+      {/* Right side (Mobile Menu Icon) */}
+      <div className="flex items-center space-x-2 sm:space-x-4 md:hidden">
         <button
-          className="md:hidden p-2 rounded hover:bg-gray-100"
+          className="p-2 rounded hover:bg-gray-100"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? <X size={22} /> : <Menu size={22} />}
@@ -136,9 +141,15 @@ const Navbar = () => {
               )}
             </div>
 
-            <button className="bg-blue-400 hover:bg-blue-600 text-white px-4 py-2 rounded-full shadow-md mt-2">
+            {/* ✅ Mobile “Become a Fellow” button */}
+            <a
+              href="https://bit.ly/ADORE-FELLOWSHIP"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-400 hover:bg-blue-600 text-white px-4 py-2 rounded-full shadow-md mt-2 text-center"
+            >
               Become a Fellow
-            </button>
+            </a>
           </div>
         </div>
       )}
