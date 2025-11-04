@@ -34,15 +34,23 @@ const AboutFellowship = () => {
           viewport={{ once: true }}
           className="text-center md:text-left"
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 sm:mb-6">
-            About ADORE Fellowship
+          <h2 className="text-xl sm:text-xl md:text-2xl font-extrabold text-gray-900 mb-4 sm:mb-6">
+            About the ADORE Fellowship Program
           </h2>
 
-          <p className="text-gray-800 leading-relaxed mb-6 sm:mb-8 text-base sm:text-lg md:text-xl">
-            ADORE Fellowship is a 2-year paid, transformative program to help you
-            become the next leader in education. Through our fellowship program,
-            we provide young leaders like you with hands-on training and
-            on-the-job experience in teaching and transforming schools in India.
+          <p className="text-gray-800 leading-relaxed mb-6 sm:mb-8 text-base sm:text-lg md:text-sm">
+The ADORE Fellowship Program is a one-year youth development and volunteering initiative designed to nurture socially responsible, skilled, and confident young leaders. <br />
+<br />Through this fellowship, participants — referred to as ADORE Fellows — will gain hands-on experience in social initiatives and get the opportunity to: <br /> <br />
+
+
+
+
+      <span><strong>1.</strong>  Participate in social impact projects</span><br />
+      <span><strong>2.</strong> Develop soft skills through real-world experiences</span><br />
+      <span><strong>3.</strong> Engage with communities and causes that matter</span><br />
+      <span><strong>4.</strong> Become a part of a nationwide network of changemakers</span><br /> <br />
+The fellowship blends learning, leadership, and service — helping you grow both personally and professionally while making a real difference.
+
           </p>
 
           {/* Vision */}
@@ -56,8 +64,9 @@ const AboutFellowship = () => {
             </div>
             <div>
               <h3 className="text-lg sm:text-xl font-bold text-gray-900">Vision</h3>
-              <p className="text-gray-700 text-sm sm:text-base">
-                Achieving equitable education for all children through systemic change.
+              <p className="text-gray-700 text-[11px] sm:text-xs
+">
+                To create a generation of empathetic, skilled, and socially responsible youth who contribute to building a more inclusive and compassionate society.
               </p>
             </div>
           </motion.div>
@@ -73,9 +82,9 @@ const AboutFellowship = () => {
             </div>
             <div>
               <h3 className="text-lg sm:text-xl font-bold text-gray-900">Mission</h3>
-              <p className="text-gray-700 text-sm sm:text-base">
-                Developing leaders who will transform schools and communities to
-                achieve education equity.
+              <p className="text-gray-700 text-[11px] sm:text-xs
+">
+                To engage, educate, and empower young individuals through structured volunteering, experiential learning, and leadership opportunities that promote community development and personal transformation.
               </p>
             </div>
           </motion.div>

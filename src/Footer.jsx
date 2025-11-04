@@ -17,7 +17,8 @@ const Footer = () => {
         <div className="w-full md:w-1/3">
           <h2 className="text-xl font-semibold mb-4 text-[#ff7b00]">WHO WE ARE</h2>
           <p className="text-gray-300 leading-relaxed">
-            ADORE is a youth-led global initiative that brings together students and young professionals who are passionate about creating a positive impact in society. It provides a platform for youth to explore their potential, develop leadership and life skills, and contribute meaningfully through volunteering, mentoring, and social projects.
+ADORE is a global volunteer-driven community that brings together individuals who aspire to make a positive difference in society through small yet impactful actions. 
+We believe that change begins with awareness, empathy, compassion and action.
           </p>
           <a
             href="https://adoreglobal.org/about" // ✅ replace with your actual link
