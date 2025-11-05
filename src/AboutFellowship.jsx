@@ -35,11 +35,11 @@ const AboutFellowship = () => {
           className="text-center md:text-left"
         >
           <h2 className="text-xl sm:text-xl md:text-2xl font-extrabold text-gray-900 mb-4 sm:mb-6">
-            About the ADORE Fellowship Program
+            About ADORE Fellowship Program
           </h2>
 
           <p className="text-gray-800 leading-relaxed mb-6 sm:mb-8 text-base sm:text-lg md:text-sm">
-The ADORE Fellowship Program is a one-year youth development and volunteering initiative designed to nurture socially responsible, skilled, and confident young leaders. <br />
+ADORE Fellowship Program is a one-year youth development and volunteering initiative designed to nurture socially responsible, skilled, and confident young leaders. <br />
 <br />Through this fellowship, participants — referred to as ADORE Fellows — will gain hands-on experience in social initiatives and get the opportunity to: <br /> <br />
 
 
