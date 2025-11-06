@@ -8,7 +8,7 @@ const Join_the_movement = () => {
         {/* Left Side Image */}
         <div className="flex justify-center order-1 md:order-none">
           <img
-            src="https://images.unsplash.com/photo-1581091012184-5c1d47d7a8a4?auto=format&fit=crop&w=700&q=80"
+            src="/image.png"
             alt="Join the Movement"
             className="rounded-2xl shadow-xl w-full md:w-4/5 object-cover transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-blue-300"
           />
@@ -36,12 +36,12 @@ const Join_the_movement = () => {
 
           {/* Call to Action Buttons */}
           <div className="mt-6 flex flex-wrap gap-4">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-full shadow-md transition-transform transform hover:scale-105">
+            <a href="https://bit.ly/ADORE-FELLOWSHIP"><button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-full shadow-md transition-transform transform hover:scale-105">
               Apply Now
-            </button>
-            <button className="border-2 border-blue-600 text-blue-600 font-semibold px-6 py-3 rounded-full hover:bg-blue-600 hover:text-white transition-transform transform hover:scale-105">
+            </button></a>
+            <a href="https://adoreglobal.org/about"><button className="border-2 border-blue-600 text-blue-600 font-semibold px-6 py-3 rounded-full hover:bg-blue-600 hover:text-white transition-transform transform hover:scale-105">
               Learn More
-            </button>
+            </button></a>
           </div>
         </div>
       </div>
